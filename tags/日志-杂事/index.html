@@ -7,236 +7,227 @@
   <meta name="author" content="John Doe">
   
   
-  <meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
   
   <meta property="og:site_name" content="HENRY_HUANG"/>
 
+  
+    <meta property="og:image" content="undefined"/>
+  
+
+  <link href="/favicon.png" rel="icon">
   <link rel="alternate" href="/atom.xml" title="HENRY_HUANG" type="application/atom+xml">
   <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
-  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
   
 </head>
 
+
 <body>
-  <header id="header" class="inner"><div class="alignleft">
-  <!--<h1><a href="/">HENRY_HUANG</a></h1>-->
-
-  <div id="contenedor">
-  <ul class="cube">
-    <li class="cara"></li>
-    <li class="cara"></li>
-    <li class="cara"></li>
-    <li class="cara"></li>
-    <li class="cara"></li>
-	  <li class="cara">
-      <iframe src="/imgs/11zhexo.svg" width="100px" height="100px">
-      </iframe>
-    </li>
-  </ul>
+  <div id="container" class="container">
+    <header id="sidebar" role="banner" class="sidebar"><div id="branding" class="branding">
+  <a href="/">
+    <img class="circle" src="/img/koala.jpg" alt="Anthem">
+  </a>
+  <h1 id="site-title" class="title">
+    <a href="/">HENRY_HUANG</a>
+  </h1>
 </div>
-
-<script type="text/javascript">
-	$(function(){
-
-		var cube = $('.cube'),
-				offset = $('#contenedor').offset(),
-				offsetleft = (offset.left + 100),
-				offsettop = (offset.top + 100);
-
-		cube.on({
-			mousemove: function(e) {
-				$(this).css('transform','rotateX(' + (e.pageY - offsettop) + 'deg) rotateY(' + (e.pageX - offsetleft) + 'deg)');
-				$(this).addClass('noanimar').removeClass('animar');
-			},
-			mouseout: function() {
-				$(this).css('transform','rotateX(0deg) rotateY(0deg)');
-				$(this).addClass('animar').removeClass('noanimar');
-			}
-		});
-
-		//console.log('x=' + offsetleft + ', y=' + offsettop);
-});
-</script>
-<script src="/js/prefixfree.min.js"></script>
-
+<a href="#" id="toggle">信息</a>
+<div class="about" style="display: none">
+  <p></p>
 </div>
-<nav id="main-nav" class="alignright">
+<nav class="menu-navigation-container">
   <ul>
     
-      <a href="/"><li>Home</li></a>
+      <li><a href="/">Home</a></li>
     
-      <a href="/archives"><li>Archives</li></a>
+      <li><a href="/archives">Archives</a></li>
     
   </ul>
-  <div class="clearfix"></div>
+</nav>
+<div class="widget">
+  
+  <nav class="search">
+  <form action="http://google.com/search" method="get" accept-charset="utf-8">
+    <input type="search" name="q" results="0" placeholder="搜索">
+    <input type="hidden" name="q" value="site:yoursite.com">
+  </form>
+</nav>
+
+  
+
+  
+<nav class="tags">
+  <h3 class="title">标签</h3>
+  <ul>
+  
+    <li><a href="/tags/IT-VMware-虚拟机/">IT VMware 虚拟机</a>&nbsp;<small>(1)</small></li>
+  
+    <li><a href="/tags/IT-设计模式-Java/">IT 设计模式 Java</a>&nbsp;<small>(2)</small></li>
+  
+    <li><a href="/tags/rails-web/">rails web</a>&nbsp;<small>(1)</small></li>
+  
+    <li><a href="/tags/图片-周末-风景/">图片 周末 风景</a>&nbsp;<small>(1)</small></li>
+  
+    <li><a href="/tags/文章-舶来品-好文/">文章 舶来品 好文</a>&nbsp;<small>(1)</small></li>
+  
+    <li><a href="/tags/日志-周末-无图/">日志 周末 无图</a>&nbsp;<small>(1)</small></li>
+  
+    <li><a href="/tags/日志-杂事/">日志 杂事</a>&nbsp;<small>(2)</small></li>
+  
+    <li><a href="/tags/日志-杂事-假期/">日志 杂事 假期</a>&nbsp;<small>(1)</small></li>
+  
+    <li><a href="/tags/日志-杂事-工作/">日志 杂事 工作</a>&nbsp;<small>(1)</small></li>
+  
+    <li><a href="/tags/日志-杂事-电影/">日志 杂事 电影</a>&nbsp;<small>(1)</small></li>
+  
+    <li><a href="/tags/日志-杂事-老家-风景/">日志 杂事 老家 风景</a>&nbsp;<small>(2)</small></li>
+  
+    <li><a href="/tags/日志-游记/">日志 游记</a>&nbsp;<small>(1)</small></li>
+  
+    <li><a href="/tags/日记/">日记</a>&nbsp;<small>(1)</small></li>
+  
+  </ul>
 </nav>
 
 
-<div class="clearfix"></div></header>
-  <div id="content" class="inner">
-    <div id="main-col" class="alignleft"><div id="wrapper">
+  <nav class="other">
+  <ul>
+    <li>
+      <a href="http://weibo.com/xiaoguizi1314" target="_blank">关注我的微博</a>
+    </li>
+  </ul>
+</nav>
 
-
-<h2 class="archive-title tag">日志 杂事</h2>
+</div></header>
+    <section id="content" class="blog">
+      
+<h2 class="archive-title">标签: 日志 杂事</h2>
 
 
   
     <article class="post">
-  
-  <div class="post-content">
-    <header>
-      
-        <div class="icon"></div>
-        <time datetime="2013-05-08T16:46:00.000Z">May 9 2013</time>
-      
-      
+  <header>
+    
   
     <h1 class="title"><a href="/2013/05/09/one-night/">睡前牢骚</a></h1>
   
 
-    </header>
-    <div class="entry">
-      
-        <p>这么一睡，又要开始一天看似忙碌的生活。总觉得时间很快，不管是从大的还是小的。和一个高中同学聊天，使得今天晚上想到好多小时候在西安的事，时间真的很快，从小学，初中，高中，甚至是大学，都在西安度过，住址从刚到西安的白鹭湾，再到双仁府，到后来的火药局巷，而现在处在从来没想到过的上海。时间过得真的很快，有种想哭的感觉，最重要的时光在西安，但是现在仔细想都想不出以后有什么理由再回到西安，觉得很伤感。</p>
+    
+  </header>
+  <section class="entry">
+    
+      <p>这么一睡，又要开始一天看似忙碌的生活。总觉得时间很快，不管是从大的还是小的。和一个高中同学聊天，使得今天晚上想到好多小时候在西安的事，时间真的很快，从小学，初中，高中，甚至是大学，都在西安度过，住址从刚到西安的白鹭湾，再到双仁府，到后来的火药局巷，而现在处在从来没想到过的上海。时间过得真的很快，有种想哭的感觉，最重要的时光在西安，但是现在仔细想都想不出以后有什么理由再回到西安，觉得很伤感。</p>
 <p>我好想哭，最近好累，每天忙碌着，我会尽一切力量去干我愿意干的事情。只是有时候停下来想想，这样做的回报是什么？得到的真正是自己想要的吗？独自一人来到离家这么远的地方，是图的什么？但有时候又想想，我的目标是学习，学习，再学习，使自己真正有力量。只是我好想回家后能吃上可口的饭菜，上学的时候，每次回家后就能吃到我妈做的饭，自从上大学后就再也没享受过了，上大学也是很仓促得就去学校了，没想到那一刻开始，生活方式就变了，而且是再也回不去。现在好想回去，真是体验到了小时候大人说的“还是小时候好”。</p>
 <p>此时此刻，听着《一个人生活》，或许更适合这一秒的气息。</p>
 <p>全世界，晚安。</p>
 
-      
-    </div>
-    <footer>
-      
+    
+  </section>
+  <footer>
+    
+    <div class="clearfix"></div>
+    
+      <div class="alignleft widget">
         
-          <div class="alignleft readmore">
-            <a href="/2013/05/09/one-night/#more" class="more-link">Read More</a>
-          </div>
+        
+          <time datetime="2013-05-08T16:46:00.000Z"><a href="/2013/05/09/one-night/">May 9 2013</a></time>
         
         
+        
+  
+  <a href="/tags/日志-杂事/">#日志 杂事</a>
+
+      </div>
       
-      <div class="clearfix"></div>
-    </footer>
-  </div>
+        <div class="alignright">
+          <a href="/2013/05/09/one-night/#more" class="more-link">阅读全文</a>
+        </div>
+      
+    
+    <div class="clearfix"></div>
+  </footer>
 </article>
 
 
   
     <article class="post">
-  
-  <div class="post-content">
-    <header>
-      
-        <div class="icon"></div>
-        <time datetime="2013-04-06T15:45:00.000Z">Apr 6 2013</time>
-      
-      
+  <header>
+    
   
     <h1 class="title"><a href="/2013/04/06/beijing-again/">又一次来到了北京</a></h1>
   
 
-    </header>
-    <div class="entry">
-      
-        <p>又一次来到了北京，不过似乎这次的天气比上次来的时候好一点，希望这次的差事快点干完，毕竟在上海做事还是有效率点。</p>
+    
+  </header>
+  <section class="entry">
+    
+      <p>又一次来到了北京，不过似乎这次的天气比上次来的时候好一点，希望这次的差事快点干完，毕竟在上海做事还是有效率点。</p>
 
-      
-    </div>
-    <footer>
-      
+    
+  </section>
+  <footer>
+    
+    <div class="clearfix"></div>
+    
+      <div class="alignleft widget">
         
-          <div class="alignleft readmore">
-            <a href="/2013/04/06/beijing-again/#more" class="more-link">Read More</a>
-          </div>
+        
+          <time datetime="2013-04-06T15:45:00.000Z"><a href="/2013/04/06/beijing-again/">Apr 6 2013</a></time>
         
         
+        
+  
+  <a href="/tags/日志-杂事/">#日志 杂事</a>
+
+      </div>
       
-      <div class="clearfix"></div>
-    </footer>
-  </div>
+        <div class="alignright">
+          <a href="/2013/04/06/beijing-again/#more" class="more-link">阅读全文</a>
+        </div>
+      
+    
+    <div class="clearfix"></div>
+  </footer>
 </article>
 
 
   
 
-  <nav id="pagination">
   
-  
-  <div class="clearfix"></div>
-</nav>
-</div></div>
-    <aside id="sidebar" class="alignright">
-<div class="search">
-  <form action="http://google.com/search" method="get" accept-charset="utf-8">
-    <input type="text" name="q" results="0" placeholder="搜索">
-    <input type="hidden" name="q" value="site:yoursite.com">
-  </form>
-</div>
 
-
-
-
-<div class="widget tag">
-  <h3 class="title">标签</h3>
-  <ul class="entry">
-  
-    <a href="/tags/图片-周末-风景/"><li>图片 周末 风景<small>1</small></li></a>
-  
-    <a href="/tags/文章-舶来品-好文/"><li>文章 舶来品 好文<small>1</small></li></a>
-  
-    <a href="/tags/日志-杂事/"><li>日志 杂事<small>2</small></li></a>
-  
-    <a href="/tags/IT-VMware-虚拟机/"><li>IT VMware 虚拟机<small>1</small></li></a>
-  
-    <a href="/tags/日志-杂事-假期/"><li>日志 杂事 假期<small>1</small></li></a>
-  
-    <a href="/tags/日志-杂事-电影/"><li>日志 杂事 电影<small>1</small></li></a>
-  
-    <a href="/tags/IT-设计模式-Java/"><li>IT 设计模式 Java<small>2</small></li></a>
-  
-    <a href="/tags/日志-杂事-老家-风景/"><li>日志 杂事 老家 风景<small>2</small></li></a>
-  
-    <a href="/tags/日志-杂事-工作/"><li>日志 杂事 工作<small>1</small></li></a>
-  
-    <a href="/tags/日志-游记/"><li>日志 游记<small>1</small></li></a>
-  
-    <a href="/tags/日记/"><li>日记<small>1</small></li></a>
-  
-    <a href="/tags/日志-周末-无图/"><li>日志 周末 无图<small>1</small></li></a>
-  
-    <a href="/tags/rails-web/"><li>rails web<small>1</small></li></a>
-  
-  </ul>
-</div>
-
-
-
-</aside>
-    <div class="clearfix"></div>
-  </div>
-  <footer id="footer" class="inner"><div class="alignleft">
+    </section>
+    <footer id="footer" class="clearfix footer"><div class="alignleft">
   
   &copy; 2013 John Doe
   
-  <br />
-  Powered by <a href="http://zespia.tw/hexo/">Hexo</a>
 </div>
-<div class="alignright license">
-<img alt="知识共享许可协议" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-sa/3.0/88x31.png" /> 本站作品采用<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.zh">知识共享署名-非商业性使用-相同方式共享 3.0 未本地化版本许可协议</a>进行许可。
-</div>
-<div class="clearfix"></div>
-</footer>
-  <script src="/js/jquery.imagesloaded.min.js"></script>
-<script src="/js/gallery.js"></script>
+<div class="clearfix"></div></footer>
+  </div>
+  <script src="http://lib.sinaapp.com/js/jquery/1.9.0/jquery.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/main.js"></script>
 
 
 
 
-<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
-<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<link rel="stylesheet" type="text/css" href="/fancybox/jquery.fancybox.css">
+<script type="text/javascript" src="/fancybox/jquery.fancybox.js"></script>
 <script type="text/javascript">
 (function($){
-  $('.fancybox').fancybox();
+  $('.fancybox').fancybox({
+    prevEffect: 'none',
+    nextEffect: 'none',
+    closeBtn: false,
+    helpers: {
+        title: {type: 'inside'},
+        buttons: {
+            position: 'bottom'
+        }
+    }
+  });
 })(jQuery);
 </script>
 
