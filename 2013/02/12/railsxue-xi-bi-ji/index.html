@@ -30,113 +30,55 @@ $(&amp;#39;#cart&amp;#39;).html(&quot;&lt;%= escape_javascript(render(@cart)) %&
 
   <link href="/favicon.png" rel="icon">
   <link rel="alternate" href="/atom.xml" title="HENRY_HUANG" type="application/atom+xml">
-  <link rel="stylesheet" href="/stylesheets/style.css" media="screen" type="text/css">
-  <link rel="stylesheet" href="/stylesheets/social_foundicons.css">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
   <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-  <script src="http://upcdn.b0.upaiyun.com/libs/jquery/jquery-1.8.3.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
   
 </head>
 
-
 <body>
-        <script type="text/javascript">
-        /**
-         * 回到页面顶部
-         * @param acceleration 加速度
-         * @param time 时间间隔 (毫秒)
-         **/
-        function goTop(acceleration, time) {
-            acceleration = acceleration || 0.1;
-            time = time || 16;
+  <header id="header" class="inner"><div class="alignleft">
+  <h1><a href="/">HENRY_HUANG</a></h1>
+  <h2><a href="/"></a></h2>
+</div>
+<nav id="main-nav">
+  <ul>
+    
+      <li><a href="/">Home</a></li>
+    
+      <li><a href="/archives">Archives</a></li>
+    
+      <li><a href="/about">About</a></li>
+    
+  </ul>
+  <div class="clearfix"></div>
+</nav>
+<div class="clearfix"></div>
+<div class="alignleft" style="margin-top: 15px">
 
-            var x1 = 0;
-            var y1 = 0;
-            var x2 = 0;
-            var y2 = 0;
-            var x3 = 0;
-            var y3 = 0;
 
-            if (document.documentElement) {
-                x1 = document.documentElement.scrollLeft || 0;
-                y1 = document.documentElement.scrollTop || 0;
-            }
-            if (document.body) {
-                x2 = document.body.scrollLeft || 0;
-                y2 = document.body.scrollTop || 0;
-            }
-            var x3 = window.scrollX || 0;
-            var y3 = window.scrollY || 0;
-
-            // 滚动条到页面顶部的水平距离
-            var x = Math.max(x1, Math.max(x2, x3));
-            // 滚动条到页面顶部的垂直距离
-            var y = Math.max(y1, Math.max(y2, y3));
-
-            // 滚动距离 = 目前距离 / 速度, 因为距离原来越小, 速度是大于 1 的数, 所以滚动距离会越来越小
-            var speed = 1 + acceleration;
-            window.scrollTo(Math.floor(x / speed), Math.floor(y / speed));
-
-            // 如果距离不为零, 继续调用迭代本函数
-            if(x > 0 || y > 0) {
-                var invokeFunction = "goTop(" + acceleration + ", " + time + ")";
-                window.setTimeout(invokeFunction, time);
-            }
-        }
-    </script>
-    <a href="#" onclick="goTop();return false;" class="backTop">▲</a>
-        <header>
-            <div class="wrapper">
-                <div class="center">
-                    <div class="searchBox"></div>
-                    <div class="headerMenu">
-                        <ul>
-                            
-                            <li><a href="/">Home</a></li>
-                            
-                            <li><a href="/archives">Archives</a></li>
-                            
-                        </ul>
-                    </div>
-                    <div class="socnets">
-                        
-                        
-                        <a href="/atom.xml" alt="rss"><i class="foundicon-rss"></i></a>
-                        
-                    </div>
-                </div>
-            </div>
-        </header>
-
-        <div class="main">
-                        <div class="brand">
-                <div class="wide">
-                    <div class="center">
-                        <h1>
-                            <a href="/">HENRY_HUANG</a>
-                        </h1>
-                        <p>
-                            
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="content"><div class="wide">
-    <div class="center">
-        <div class="head">
-            <div class="timeLine">
-                <time datetime="2013-02-12T13:41:00.000Z" class="date">
-                    <a href="/2013/02/12/railsxue-xi-bi-ji/">Feb 12 2013</a>
-                </time>
-            </div>
-        </div>
-        
+</div>
+<div class="clearfix"></div>
+</header>
+  <div id="content" class="inner">
+    <div id="wrapper"><article class="post">
   
-    <h2 class="title">Rails学习笔记-11.2</h1>
+  <div class="post-content">
+    <header>
+      
+  
+    <h1 class="title">Rails学习笔记-11.2</h1>
   
 
-        <div class="entry">
-        
-          <p>11.2 迭代F2:建立一个基于Ajax的购物车</p>
+      
+        <p class="published">
+          Published: <time datetime="2013-02-12T13:41:00.000Z">Feb 12 2013</time>
+        </p>
+      
+    </header>
+    <div class="entry">
+      
+        <p>11.2 迭代F2:建立一个基于Ajax的购物车</p>
 <p>开始是按照书里面写的，创建create.js.rjs，</p>
 <p>网上查了，需要使用protype-rails gem，于是安装了，但是页面点击后ajax没有效果，需要手动刷新后才能出现。</p>
 <p>于是在网上查了,由于默认使用jquery，所以就改成了jquery的，创建create.js.erb，内容为$(&#39;#cart&#39;).html(&quot;&lt;%= escape_javascript(render(@cart)) %&gt;&quot;);</p>
@@ -148,19 +90,26 @@ $(&#39;#cart&#39;).html(&quot;&lt;%= escape_javascript(render(@cart)) %&gt;&quot
 <p>3.修改line_items_controller中的create方法， 加入format.js</p>
 <p>传送门:<a href="http://ruby-china.org/topics/6154" target="_blank">RubyChina</a></p>
 
-        
-        
-        </div>
+      
     </div>
-</div>
-                </div>
-        </div>
+    <footer>
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+<!-- hackish -->
 
-  <footer>
+  
+</div>
+    <div class="clearfix"></div>
+  </div>
+  <footer id="footer" class="inner"><div class="alignleft">
   
   &copy; 2013 John Doe
   
-</footer>
+</div>
+<div class="clearfix"></div></footer>
   <script src="/js/jquery.imagesloaded.min.js"></script>
 <script src="/js/gallery.js"></script>
 

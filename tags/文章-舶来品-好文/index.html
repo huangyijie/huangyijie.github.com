@@ -18,117 +18,60 @@
 
   <link href="/favicon.png" rel="icon">
   <link rel="alternate" href="/atom.xml" title="HENRY_HUANG" type="application/atom+xml">
-  <link rel="stylesheet" href="/stylesheets/style.css" media="screen" type="text/css">
-  <link rel="stylesheet" href="/stylesheets/social_foundicons.css">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
   <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-  <script src="http://upcdn.b0.upaiyun.com/libs/jquery/jquery-1.8.3.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
   
 </head>
 
-
 <body>
-        <script type="text/javascript">
-        /**
-         * 回到页面顶部
-         * @param acceleration 加速度
-         * @param time 时间间隔 (毫秒)
-         **/
-        function goTop(acceleration, time) {
-            acceleration = acceleration || 0.1;
-            time = time || 16;
+  <header id="header" class="inner"><div class="alignleft">
+  <h1><a href="/">HENRY_HUANG</a></h1>
+  <h2><a href="/"></a></h2>
+</div>
+<nav id="main-nav">
+  <ul>
+    
+      <li><a href="/">Home</a></li>
+    
+      <li><a href="/archives">Archives</a></li>
+    
+      <li><a href="/about">About</a></li>
+    
+  </ul>
+  <div class="clearfix"></div>
+</nav>
+<div class="clearfix"></div>
+<div class="alignleft" style="margin-top: 15px">
 
-            var x1 = 0;
-            var y1 = 0;
-            var x2 = 0;
-            var y2 = 0;
-            var x3 = 0;
-            var y3 = 0;
 
-            if (document.documentElement) {
-                x1 = document.documentElement.scrollLeft || 0;
-                y1 = document.documentElement.scrollTop || 0;
-            }
-            if (document.body) {
-                x2 = document.body.scrollLeft || 0;
-                y2 = document.body.scrollTop || 0;
-            }
-            var x3 = window.scrollX || 0;
-            var y3 = window.scrollY || 0;
-
-            // 滚动条到页面顶部的水平距离
-            var x = Math.max(x1, Math.max(x2, x3));
-            // 滚动条到页面顶部的垂直距离
-            var y = Math.max(y1, Math.max(y2, y3));
-
-            // 滚动距离 = 目前距离 / 速度, 因为距离原来越小, 速度是大于 1 的数, 所以滚动距离会越来越小
-            var speed = 1 + acceleration;
-            window.scrollTo(Math.floor(x / speed), Math.floor(y / speed));
-
-            // 如果距离不为零, 继续调用迭代本函数
-            if(x > 0 || y > 0) {
-                var invokeFunction = "goTop(" + acceleration + ", " + time + ")";
-                window.setTimeout(invokeFunction, time);
-            }
-        }
-    </script>
-    <a href="#" onclick="goTop();return false;" class="backTop">▲</a>
-        <header>
-            <div class="wrapper">
-                <div class="center">
-                    <div class="searchBox"></div>
-                    <div class="headerMenu">
-                        <ul>
-                            
-                            <li><a href="/">Home</a></li>
-                            
-                            <li><a href="/archives">Archives</a></li>
-                            
-                        </ul>
-                    </div>
-                    <div class="socnets">
-                        
-                        
-                        <a href="/atom.xml" alt="rss"><i class="foundicon-rss"></i></a>
-                        
-                    </div>
-                </div>
-            </div>
-        </header>
-
-        <div class="main">
-                        <div class="brand">
-                <div class="wide">
-                    <div class="center">
-                        <h1>
-                            <a href="/">HENRY_HUANG</a>
-                        </h1>
-                        <p>
-                            
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="content">
+</div>
+<div class="clearfix"></div>
+</header>
+  <div id="content" class="inner">
+    <div id="wrapper">
+<h2 class="archive-title tag">文章 舶来品 好文</h2>
 
 
   
-    <div class="wide">
-    <div class="center">
-        <div class="head">
-            <div class="timeLine">
-                <time datetime="2013-05-08T01:18:00.000Z" class="date">
-                    <a href="/2013/05/08/ui-design-principles/">May 8 2013</a>
-                </time>
-            </div>
-        </div>
-        
+    <article class="post">
   
-    <h2 class="title"><a href="/2013/05/08/ui-design-principles/">[好文]用户接口（UI）设计的 20 条原则</a></h1>
+  <div class="post-content">
+    <header>
+      
+  
+    <h1 class="title"><a href="/2013/05/08/ui-design-principles/">[好文]用户接口（UI）设计的 20 条原则</a></h1>
   
 
-        <div class="entry">
-        
-          <p><img src="http://githubimg.qiniudn.com/pics/ui_design_principles.png" alt="用户接口（UI）设计的 20 条原则" title="用户接口（UI）设计的 20 条原则"></p>
+      
+        <p class="published">
+          Published: <time datetime="2013-05-08T01:18:00.000Z">May 8 2013</time>
+        </p>
+      
+    </header>
+    <div class="entry">
+      
+        <p><img src="http://githubimg.qiniudn.com/pics/ui_design_principles.png" alt="用户接口（UI）设计的 20 条原则" title="用户接口（UI）设计的 20 条原则"></p>
 <p>世界级图形设计大师Paul Rand（保罗.兰德）曾经说过：“设计绝不是简单的排列组合与简单地再编辑，它应当充满着价值和意义，去说明道理，去删繁就简，去阐明演绎，去修饰美 化，去赞美褒扬，使其有戏剧意味，让人们信服你所言……”，由此可见，设计绝非轻而易举之事，优秀的设计更是难上加难，今日小编偶然发现一篇界面设计师 Joshua Porter博客当中的一篇文章——《Principles of User Interface Design》，文章中列举了20大UI设计原则，看完之后，觉得挺受启发，于是试着将其编译，希望能够给广大设计师——特别是刚入门的初级设计师，提供 较好的学习机会。全文编译如下：</p>
 <h2>1.清晰度是首要工作</h2>
 <p>清晰度是界面设计中，第一步也是最重要的工作。要想你设计的界面有效并被人喜欢，首先必须让用户能够识别出它？让用户知道为什么会使用它？比如当用户使用 时，能够预料到发生什么，并成功的与它交互。有的界面设计得不是太清晰，虽然能够满足用户一时的需求，但并非长久之计，而清晰的界面能够吸引用户不断地重 复使用。</p>
@@ -137,27 +80,35 @@
 <h2>3.保护和尊重用户的注意力</h2>
 <p>我们在阅读的时候，总是会有许多事物分散我们的注意力，使得我们很难集中注意力安静地阅读。因此，在进行界面设计的时候，能够吸引用户的注意力是很关键 的，所以千万不要将你应用的周围设计得乱七八糟分散人的注意力，谨记屏幕整洁能够吸引注意力的重要性。如果你非要显示广告，那么请在用户阅读完毕之后再显 示。尊重用户的注意力，不仅让用户更快乐，而且你的广告效果也会更佳。因此要想设计好的界面，保护和尊重用户的注意力是先决条件。
 
-        
-        
-          
-          <a href="/2013/05/08/ui-design-principles/#more" class="more-link">More</a>
-          
-        
-        </div>
+      
     </div>
-</div>
-                
+    <footer>
+      
+        
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+<!-- hackish -->
+
   
 
-                  
+  <nav id="pagination">
+  
+  
+  <div class="clearfix"></div>
+</nav>
 </div>
-        </div>
-
-  <footer>
+    <div class="clearfix"></div>
+  </div>
+  <footer id="footer" class="inner"><div class="alignleft">
   
   &copy; 2013 John Doe
   
-</footer>
+</div>
+<div class="clearfix"></div></footer>
   <script src="/js/jquery.imagesloaded.min.js"></script>
 <script src="/js/gallery.js"></script>
 
