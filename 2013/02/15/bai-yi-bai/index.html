@@ -5,45 +5,129 @@
   
   <title>巨峰寺拜一拜 | HENRY_HUANG</title>
   <meta name="author" content="John Doe">
-
   
   <meta name="description" content="老妈说她基本20年没去龟庵拜了，刚好这几天没事干，所以就准备今天到龟庵拜一拜，恰好现在也是桃花节。
 我们没有走大路，而是走山路，这条路是父母这一辈小时候一直走的，况且省时间，比较近，不用和来自市里的大部队相拥挤。">
   
   
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
+  <meta property="og:title" content="巨峰寺拜一拜"/>
+  <meta property="og:site_name" content="HENRY_HUANG"/>
+
+  
+    <meta property="og:image" content="undefined"/>
+  
+
+  <link href="/favicon.png" rel="icon">
   <link rel="alternate" href="/atom.xml" title="HENRY_HUANG" type="application/atom+xml">
-  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/stylesheets/style.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/stylesheets/social_foundicons.css">
   <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+  <script src="http://upcdn.b0.upaiyun.com/libs/jquery/jquery-1.8.3.min.js"></script>
   
 </head>
 
+
 <body>
-  <header id="header" class="inner"><nav>
-  <ul>
-    
-      <li><a href="/">Home</a></li>
-    
-      <li><a href="/archives">Archives</a></li>
-    
-  </ul>
-</nav></header>
-  <div id="content" class="inner"><article class="post">
+        <script type="text/javascript">
+        /**
+         * 回到页面顶部
+         * @param acceleration 加速度
+         * @param time 时间间隔 (毫秒)
+         **/
+        function goTop(acceleration, time) {
+            acceleration = acceleration || 0.1;
+            time = time || 16;
+
+            var x1 = 0;
+            var y1 = 0;
+            var x2 = 0;
+            var y2 = 0;
+            var x3 = 0;
+            var y3 = 0;
+
+            if (document.documentElement) {
+                x1 = document.documentElement.scrollLeft || 0;
+                y1 = document.documentElement.scrollTop || 0;
+            }
+            if (document.body) {
+                x2 = document.body.scrollLeft || 0;
+                y2 = document.body.scrollTop || 0;
+            }
+            var x3 = window.scrollX || 0;
+            var y3 = window.scrollY || 0;
+
+            // 滚动条到页面顶部的水平距离
+            var x = Math.max(x1, Math.max(x2, x3));
+            // 滚动条到页面顶部的垂直距离
+            var y = Math.max(y1, Math.max(y2, y3));
+
+            // 滚动距离 = 目前距离 / 速度, 因为距离原来越小, 速度是大于 1 的数, 所以滚动距离会越来越小
+            var speed = 1 + acceleration;
+            window.scrollTo(Math.floor(x / speed), Math.floor(y / speed));
+
+            // 如果距离不为零, 继续调用迭代本函数
+            if(x > 0 || y > 0) {
+                var invokeFunction = "goTop(" + acceleration + ", " + time + ")";
+                window.setTimeout(invokeFunction, time);
+            }
+        }
+    </script>
+    <a href="#" onclick="goTop();return false;" class="backTop">▲</a>
+        <header>
+            <div class="wrapper">
+                <div class="center">
+                    <div class="searchBox"></div>
+                    <div class="headerMenu">
+                        <ul>
+                            
+                            <li><a href="/">Home</a></li>
+                            
+                            <li><a href="/archives">Archives</a></li>
+                            
+                        </ul>
+                    </div>
+                    <div class="socnets">
+                        
+                        
+                        <a href="/atom.xml" alt="rss"><i class="foundicon-rss"></i></a>
+                        
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="main">
+                        <div class="brand">
+                <div class="wide">
+                    <div class="center">
+                        <h1>
+                            <a href="/">HENRY_HUANG</a>
+                        </h1>
+                        <p>
+                            
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="content"><div class="wide">
+    <div class="center">
+        <div class="head">
+            <div class="timeLine">
+                <time datetime="2013-02-15T09:49:00.000Z" class="date">
+                    <a href="/2013/02/15/bai-yi-bai/">Feb 15 2013</a>
+                </time>
+            </div>
+        </div>
+        
   
-  <header>
-    
-  
-    <h1 class="title">巨峰寺拜一拜</h1>
+    <h2 class="title">巨峰寺拜一拜</h1>
   
 
-    <time datetime="2013-02-15T09:49:00.000Z">
-  <span class="day">15</span><span class="month">Feb</span>
-</time>
-  </header>
-  <div class="entry-content">
-    
-      <p>老妈说她基本20年没去龟庵拜了，刚好这几天没事干，所以就准备今天到龟庵拜一拜，恰好现在也是桃花节。</p>
+        <div class="entry">
+        
+          <p>老妈说她基本20年没去龟庵拜了，刚好这几天没事干，所以就准备今天到龟庵拜一拜，恰好现在也是桃花节。</p>
 <p>我们没有走大路，而是走山路，这条路是父母这一辈小时候一直走的，况且省时间，比较近，不用和来自市里的大部队相拥挤。</p>
 <p><img src="http://githubimg.qiniudn.com/20130215_jufengsi/zailushang_1.jpg" alt="小弟的背影" title="小弟的背影"></p>
 <a name="more"></a>
@@ -83,33 +167,19 @@
 <p>最后，下到山脚下，想着不远处有家肠粉店，就去吃了，啊，美味啊，每次回家都必须吃！</p>
 <p><img src="http://githubimg.qiniudn.com/20130215_jufengsi/changfen_1.jpg" alt="肠粉" title="肠粉"></p>
 
-    
-    
-    <footer class="meta">
-      
-      
-  <div class="tags">
-<a href="/tags/日志-杂事-老家-风景/">日志 杂事 老家 风景</a></div>
-
-      
-    </footer>
-    
-  </div>
-  
-</article></div>
-  <footer id="footer" class="inner"><div class="social alignright">
-  
-  
-  
-  
-  <a class="rss" href="/atom.xml" title="RSS">RSS</a>
+        
+        
+        </div>
+    </div>
 </div>
-<p>
+                </div>
+        </div>
+
+  <footer>
   
   &copy; 2013 John Doe
   
-</p>
-<div class="clearfix"></div></footer>
+</footer>
   <script src="/js/jquery.imagesloaded.min.js"></script>
 <script src="/js/gallery.js"></script>
 
@@ -124,12 +194,5 @@
 })(jQuery);
 </script>
 
-
-<div id="phasebeam">
-  <canvas></canvas>
-  <canvas></canvas>
-  <canvas></canvas>
-</div>
-<script src="/js/phasebeam.js"></script>
 </body>
 </html>

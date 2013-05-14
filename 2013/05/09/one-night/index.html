@@ -5,7 +5,6 @@
   
   <title>睡前牢骚 | HENRY_HUANG</title>
   <meta name="author" content="John Doe">
-
   
   <meta name="description" content="这么一睡，又要开始一天看似忙碌的生活。总觉得时间很快，不管是从大的还是小的。和一个高中同学聊天，使得今天晚上想到好多小时候在西安的事，时间真的很快，从小学，初中，高中，甚至是大学，都在西安度过，住址从刚到西安的白鹭湾，再到双仁府，到后来的火药局巷，而现在处在从来没想到过的上海。时间过得真的很快，有种想哭的感觉，最重要的时光在西安，但是现在仔细想都想不出以后有什么理由再回到西安，觉得很伤感。
 我好想哭，最近好累，每天忙碌着，我会尽一切力量去干我愿意干的事情。只是有时候停下来想想，这样做的回报是什么？得到的真正是自己想要的吗？独自一人来到离家这么远的地方，是图的什么？但有时候又想想，我的目标是学习，学习，再学习，使自己真正有力量。只是我好想回家后能吃上可口的饭菜，上学的时候，每次回家后就能吃到我妈做的饭，自从上大学后就再也没享受过了，上大学也是很仓促得就去学校了，没想到那一刻开始，生活方式就变了，而且是再也回不去。现在好想回去，真是体验到了小时候大人说的“还是小时候好”。
@@ -13,70 +12,141 @@
 全世界，晚安。">
   
   
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
+  <meta property="og:title" content="睡前牢骚"/>
+  <meta property="og:site_name" content="HENRY_HUANG"/>
+
+  
+    <meta property="og:image" content="undefined"/>
+  
+
+  <link href="/favicon.png" rel="icon">
   <link rel="alternate" href="/atom.xml" title="HENRY_HUANG" type="application/atom+xml">
-  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/stylesheets/style.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/stylesheets/social_foundicons.css">
   <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+  <script src="http://upcdn.b0.upaiyun.com/libs/jquery/jquery-1.8.3.min.js"></script>
   
 </head>
 
+
 <body>
-  <header id="header" class="inner"><nav>
-  <ul>
-    
-      <li><a href="/">Home</a></li>
-    
-      <li><a href="/archives">Archives</a></li>
-    
-  </ul>
-</nav></header>
-  <div id="content" class="inner"><article class="post">
+        <script type="text/javascript">
+        /**
+         * 回到页面顶部
+         * @param acceleration 加速度
+         * @param time 时间间隔 (毫秒)
+         **/
+        function goTop(acceleration, time) {
+            acceleration = acceleration || 0.1;
+            time = time || 16;
+
+            var x1 = 0;
+            var y1 = 0;
+            var x2 = 0;
+            var y2 = 0;
+            var x3 = 0;
+            var y3 = 0;
+
+            if (document.documentElement) {
+                x1 = document.documentElement.scrollLeft || 0;
+                y1 = document.documentElement.scrollTop || 0;
+            }
+            if (document.body) {
+                x2 = document.body.scrollLeft || 0;
+                y2 = document.body.scrollTop || 0;
+            }
+            var x3 = window.scrollX || 0;
+            var y3 = window.scrollY || 0;
+
+            // 滚动条到页面顶部的水平距离
+            var x = Math.max(x1, Math.max(x2, x3));
+            // 滚动条到页面顶部的垂直距离
+            var y = Math.max(y1, Math.max(y2, y3));
+
+            // 滚动距离 = 目前距离 / 速度, 因为距离原来越小, 速度是大于 1 的数, 所以滚动距离会越来越小
+            var speed = 1 + acceleration;
+            window.scrollTo(Math.floor(x / speed), Math.floor(y / speed));
+
+            // 如果距离不为零, 继续调用迭代本函数
+            if(x > 0 || y > 0) {
+                var invokeFunction = "goTop(" + acceleration + ", " + time + ")";
+                window.setTimeout(invokeFunction, time);
+            }
+        }
+    </script>
+    <a href="#" onclick="goTop();return false;" class="backTop">▲</a>
+        <header>
+            <div class="wrapper">
+                <div class="center">
+                    <div class="searchBox"></div>
+                    <div class="headerMenu">
+                        <ul>
+                            
+                            <li><a href="/">Home</a></li>
+                            
+                            <li><a href="/archives">Archives</a></li>
+                            
+                        </ul>
+                    </div>
+                    <div class="socnets">
+                        
+                        
+                        <a href="/atom.xml" alt="rss"><i class="foundicon-rss"></i></a>
+                        
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="main">
+                        <div class="brand">
+                <div class="wide">
+                    <div class="center">
+                        <h1>
+                            <a href="/">HENRY_HUANG</a>
+                        </h1>
+                        <p>
+                            
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="content"><div class="wide">
+    <div class="center">
+        <div class="head">
+            <div class="timeLine">
+                <time datetime="2013-05-08T16:46:00.000Z" class="date">
+                    <a href="/2013/05/09/one-night/">May 9 2013</a>
+                </time>
+            </div>
+        </div>
+        
   
-  <header>
-    
-  
-    <h1 class="title">睡前牢骚</h1>
+    <h2 class="title">睡前牢骚</h1>
   
 
-    <time datetime="2013-05-08T16:46:00.000Z">
-  <span class="day">9</span><span class="month">May</span>
-</time>
-  </header>
-  <div class="entry-content">
-    
-      <p>这么一睡，又要开始一天看似忙碌的生活。总觉得时间很快，不管是从大的还是小的。和一个高中同学聊天，使得今天晚上想到好多小时候在西安的事，时间真的很快，从小学，初中，高中，甚至是大学，都在西安度过，住址从刚到西安的白鹭湾，再到双仁府，到后来的火药局巷，而现在处在从来没想到过的上海。时间过得真的很快，有种想哭的感觉，最重要的时光在西安，但是现在仔细想都想不出以后有什么理由再回到西安，觉得很伤感。</p>
+        <div class="entry">
+        
+          <p>这么一睡，又要开始一天看似忙碌的生活。总觉得时间很快，不管是从大的还是小的。和一个高中同学聊天，使得今天晚上想到好多小时候在西安的事，时间真的很快，从小学，初中，高中，甚至是大学，都在西安度过，住址从刚到西安的白鹭湾，再到双仁府，到后来的火药局巷，而现在处在从来没想到过的上海。时间过得真的很快，有种想哭的感觉，最重要的时光在西安，但是现在仔细想都想不出以后有什么理由再回到西安，觉得很伤感。</p>
 <p>我好想哭，最近好累，每天忙碌着，我会尽一切力量去干我愿意干的事情。只是有时候停下来想想，这样做的回报是什么？得到的真正是自己想要的吗？独自一人来到离家这么远的地方，是图的什么？但有时候又想想，我的目标是学习，学习，再学习，使自己真正有力量。只是我好想回家后能吃上可口的饭菜，上学的时候，每次回家后就能吃到我妈做的饭，自从上大学后就再也没享受过了，上大学也是很仓促得就去学校了，没想到那一刻开始，生活方式就变了，而且是再也回不去。现在好想回去，真是体验到了小时候大人说的“还是小时候好”。</p>
 <p>此时此刻，听着《一个人生活》，或许更适合这一秒的气息。</p>
 <p>全世界，晚安。</p>
 
-    
-    
-    <footer class="meta">
-      
-      
-  <div class="tags">
-<a href="/tags/日志-杂事/">日志 杂事</a></div>
-
-      
-    </footer>
-    
-  </div>
-  
-</article></div>
-  <footer id="footer" class="inner"><div class="social alignright">
-  
-  
-  
-  
-  <a class="rss" href="/atom.xml" title="RSS">RSS</a>
+        
+        
+        </div>
+    </div>
 </div>
-<p>
+                </div>
+        </div>
+
+  <footer>
   
   &copy; 2013 John Doe
   
-</p>
-<div class="clearfix"></div></footer>
+</footer>
   <script src="/js/jquery.imagesloaded.min.js"></script>
 <script src="/js/gallery.js"></script>
 
@@ -91,12 +161,5 @@
 })(jQuery);
 </script>
 
-
-<div id="phasebeam">
-  <canvas></canvas>
-  <canvas></canvas>
-  <canvas></canvas>
-</div>
-<script src="/js/phasebeam.js"></script>
 </body>
 </html>

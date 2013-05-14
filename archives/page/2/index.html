@@ -3,58 +3,132 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Page 2 | Archives | HENRY_HUANG</title>
+  <title>第 2 页 | 归档 | HENRY_HUANG</title>
   <meta name="author" content="John Doe">
-
   
   
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
+  
+  <meta property="og:site_name" content="HENRY_HUANG"/>
+
+  
+    <meta property="og:image" content="undefined"/>
+  
+
+  <link href="/favicon.png" rel="icon">
   <link rel="alternate" href="/atom.xml" title="HENRY_HUANG" type="application/atom+xml">
-  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/stylesheets/style.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/stylesheets/social_foundicons.css">
   <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+  <script src="http://upcdn.b0.upaiyun.com/libs/jquery/jquery-1.8.3.min.js"></script>
   
 </head>
 
+
 <body>
-  <header id="header" class="inner"><nav>
-  <ul>
-    
-      <li><a href="/">Home</a></li>
-    
-      <li><a href="/archives">Archives</a></li>
-    
-  </ul>
-</nav></header>
-  <div id="content" class="inner">
+        <script type="text/javascript">
+        /**
+         * 回到页面顶部
+         * @param acceleration 加速度
+         * @param time 时间间隔 (毫秒)
+         **/
+        function goTop(acceleration, time) {
+            acceleration = acceleration || 0.1;
+            time = time || 16;
 
-<header id="archive-header">
-  <h1 class="alignleft">Archives</h1>
-  <div class="search alignright">
-    <form action="http://google.com/search" method="get" accept-charset="utf-8">
-      <input type="search" name="q" results="0" placeholder="Search">
-      <input type="hidden" name="q" value="site:yoursite.com">
-    </form>
-  </div>
-</header>
+            var x1 = 0;
+            var y1 = 0;
+            var x2 = 0;
+            var y2 = 0;
+            var x3 = 0;
+            var y3 = 0;
+
+            if (document.documentElement) {
+                x1 = document.documentElement.scrollLeft || 0;
+                y1 = document.documentElement.scrollTop || 0;
+            }
+            if (document.body) {
+                x2 = document.body.scrollLeft || 0;
+                y2 = document.body.scrollTop || 0;
+            }
+            var x3 = window.scrollX || 0;
+            var y3 = window.scrollY || 0;
+
+            // 滚动条到页面顶部的水平距离
+            var x = Math.max(x1, Math.max(x2, x3));
+            // 滚动条到页面顶部的垂直距离
+            var y = Math.max(y1, Math.max(y2, y3));
+
+            // 滚动距离 = 目前距离 / 速度, 因为距离原来越小, 速度是大于 1 的数, 所以滚动距离会越来越小
+            var speed = 1 + acceleration;
+            window.scrollTo(Math.floor(x / speed), Math.floor(y / speed));
+
+            // 如果距离不为零, 继续调用迭代本函数
+            if(x > 0 || y > 0) {
+                var invokeFunction = "goTop(" + acceleration + ", " + time + ")";
+                window.setTimeout(invokeFunction, time);
+            }
+        }
+    </script>
+    <a href="#" onclick="goTop();return false;" class="backTop">▲</a>
+        <header>
+            <div class="wrapper">
+                <div class="center">
+                    <div class="searchBox"></div>
+                    <div class="headerMenu">
+                        <ul>
+                            
+                            <li><a href="/">Home</a></li>
+                            
+                            <li><a href="/archives">Archives</a></li>
+                            
+                        </ul>
+                    </div>
+                    <div class="socnets">
+                        
+                        
+                        <a href="/atom.xml" alt="rss"><i class="foundicon-rss"></i></a>
+                        
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="main">
+                        <div class="brand">
+                <div class="wide">
+                    <div class="center">
+                        <h1>
+                            <a href="/">HENRY_HUANG</a>
+                        </h1>
+                        <p>
+                            
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="content">
 
 
   
-    <article class="post">
+    <div class="wide">
+    <div class="center">
+        <div class="head">
+            <div class="timeLine">
+                <time datetime="2013-02-26T12:46:00.000Z" class="date">
+                    <a href="/2013/02/26/beijing-first-time/">Feb 26 2013</a>
+                </time>
+            </div>
+        </div>
+        
   
-  <header>
-    
-  
-    <h1 class="title"><a href="/2013/02/26/beijing-first-time/">第一次来北京</a></h1>
+    <h2 class="title"><a href="/2013/02/26/beijing-first-time/">第一次来北京</a></h1>
   
 
-    <time datetime="2013-02-26T12:46:00.000Z">
-  <span class="day">26</span><span class="month">Feb</span>
-</time>
-  </header>
-  <div class="entry-content">
-    
-      <p>由于工作出差，第一次来到北京，作为一个程序猿，也来吸一吸北京著名的空气。</p>
+        <div class="entry">
+        
+          <p>由于工作出差，第一次来到北京，作为一个程序猿，也来吸一吸北京著名的空气。</p>
 <p>没错，下车的第一感觉就让我感受到了北京的便宜交通，据说全程2块，不会上涨，好爽啊。</p>
 <p>可是，当我出地铁，我就纳闷怎么这么晚了天还是一片朦胧？果然这就像报道的那样。。。</p>
 <p>唉，下车后马不停蹄的就赶到客户那里，发现其实就是换了个工作地点，唉。</p>
@@ -62,36 +136,34 @@
 <p>可是，当我现在身在北京，什么天安门，天坛，长城。。。为什么我一点想去的期望都没有。。。</p>
 <p>唉，不知道这几天可以见到阳光明媚的天空不。。。</p>
 
-    
-    
-    <footer class="meta">
-      
-      
-  <div class="tags">
-<a href="/tags/日志-杂事-工作/">日志 杂事 工作</a></div>
+        
+        
+          
+          <a href="/2013/02/26/beijing-first-time/#more" class="more-link">More</a>
+          
+        
+        </div>
+    </div>
+</div>
+                
+  
+    <div class="wide">
+    <div class="center">
+        <div class="head">
+            <div class="timeLine">
+                <time datetime="2013-02-20T14:24:00.000Z" class="date">
+                    <a href="/2013/02/20/vmware-network-config/">Feb 20 2013</a>
+                </time>
+            </div>
+        </div>
+        
+  
+    <h2 class="title"><a href="/2013/02/20/vmware-network-config/">[新手]VMware网络配置</a></h1>
+  
 
-      
-    </footer>
-    
-  </div>
-  
-</article>
-  
-    <article class="post">
-  
-  <header>
-    
-  
-    <h1 class="title"><a href="/2013/02/20/vmware-network-config/">[新手]VMware网络配置</a></h1>
-  
-
-    <time datetime="2013-02-20T14:24:00.000Z">
-  <span class="day">20</span><span class="month">Feb</span>
-</time>
-  </header>
-  <div class="entry-content">
-    
-      <p>这个问题以前一直没专门去想过，只是网络不通了我才去折腾，实在不行就问别人，今天总算好好的去理解了一下。这篇文章能写出来，最需要感谢的是华叔。</p>
+        <div class="entry">
+        
+          <p>这个问题以前一直没专门去想过，只是网络不通了我才去折腾，实在不行就问别人，今天总算好好的去理解了一下。这篇文章能写出来，最需要感谢的是华叔。</p>
 <h3><strong>首先，是对三种模式的理解：</strong></h3>
 <h4><strong>1.Bridged（桥接模式）:</strong></h4>
 <blockquote>
@@ -102,171 +174,161 @@
 <blockquote>
 <p>主机和虚拟机之间建立自己的通信，需配置成网络在同一网段,两个虚拟机之间配置成Host-only也可以互相通信。
 
-    
-    
-    <footer class="meta">
-      
-      
-  <div class="tags">
-<a href="/tags/IT-VMware-虚拟机/">IT VMware 虚拟机</a></div>
+        
+        
+          
+          <a href="/2013/02/20/vmware-network-config/#more" class="more-link">More</a>
+          
+        
+        </div>
+    </div>
+</div>
+                
+  
+    <div class="wide">
+    <div class="center">
+        <div class="head">
+            <div class="timeLine">
+                <time datetime="2013-02-20T04:49:00.000Z" class="date">
+                    <a href="/2013/02/20/design-patterns-singleton/">Feb 20 2013</a>
+                </time>
+            </div>
+        </div>
+        
+  
+    <h2 class="title"><a href="/2013/02/20/design-patterns-singleton/">[设计模式学习笔记]单例模式</a></h1>
+  
 
-      
-    </footer>
-    
-  </div>
-  
-</article>
-  
-    <article class="post">
-  
-  <header>
-    
-  
-    <h1 class="title"><a href="/2013/02/20/design-patterns-singleton/">[设计模式学习笔记]单例模式</a></h1>
-  
-
-    <time datetime="2013-02-20T04:49:00.000Z">
-  <span class="day">20</span><span class="month">Feb</span>
-</time>
-  </header>
-  <div class="entry-content">
-    
-      <p>最近在看秦小波的<strong>《设计模式之禅》</strong>，虽然这东西只看是没有用的，但是在实际使用之前学习23种模式的概念，还是很重要！</p>
+        <div class="entry">
+        
+          <p>最近在看秦小波的<strong>《设计模式之禅》</strong>，虽然这东西只看是没有用的，但是在实际使用之前学习23种模式的概念，还是很重要！</p>
 <h3>单例模式类图（这是饿汉式的）</h3>
 <p><img src="http://cnhalo.qiniudn.com/designpatterns/singleton_class.jpg" alt="单例模式类图"></p>
 <h3>单例模式通用代码（饿汉式）</h3>
 
-    
-    
-    <footer class="meta">
-      
-      
-  <div class="tags">
-<a href="/tags/IT-设计模式-Java/">IT 设计模式 Java</a></div>
+        
+        
+          
+          <a href="/2013/02/20/design-patterns-singleton/#more" class="more-link">More</a>
+          
+        
+        </div>
+    </div>
+</div>
+                
+  
+    <div class="wide">
+    <div class="center">
+        <div class="head">
+            <div class="timeLine">
+                <time datetime="2013-02-20T02:09:00.000Z" class="date">
+                    <a href="/2013/02/20/design-patterns-factory/">Feb 20 2013</a>
+                </time>
+            </div>
+        </div>
+        
+  
+    <h2 class="title"><a href="/2013/02/20/design-patterns-factory/">[设计模式学习笔记]工厂方法模式</a></h1>
+  
 
-      
-    </footer>
-    
-  </div>
-  
-</article>
-  
-    <article class="post">
-  
-  <header>
-    
-  
-    <h1 class="title"><a href="/2013/02/20/design-patterns-factory/">[设计模式学习笔记]工厂方法模式</a></h1>
-  
-
-    <time datetime="2013-02-20T02:09:00.000Z">
-  <span class="day">20</span><span class="month">Feb</span>
-</time>
-  </header>
-  <div class="entry-content">
-    
-      <p>首先，看一下比较实用的工厂模式的通用源码。</p>
+        <div class="entry">
+        
+          <p>首先，看一下比较实用的工厂模式的通用源码。</p>
 <h3>工厂方法模式通用类图</h3>
 <p><img src="http://cnhalo.qiniudn.com/designpatterns/factory_class.jpg" alt="工厂模式类图"></p>
 <h3>抽象产品类</h3>
 
-    
-    
-    <footer class="meta">
-      
-      
-  <div class="tags">
-<a href="/tags/IT-设计模式-Java/">IT 设计模式 Java</a></div>
+        
+        
+          
+          <a href="/2013/02/20/design-patterns-factory/#more" class="more-link">More</a>
+          
+        
+        </div>
+    </div>
+</div>
+                
+  
+    <div class="wide">
+    <div class="center">
+        <div class="head">
+            <div class="timeLine">
+                <time datetime="2013-02-15T09:49:00.000Z" class="date">
+                    <a href="/2013/02/15/bai-yi-bai/">Feb 15 2013</a>
+                </time>
+            </div>
+        </div>
+        
+  
+    <h2 class="title"><a href="/2013/02/15/bai-yi-bai/">巨峰寺拜一拜</a></h1>
+  
 
-      
-    </footer>
-    
-  </div>
-  
-</article>
-  
-    <article class="post">
-  
-  <header>
-    
-  
-    <h1 class="title"><a href="/2013/02/15/bai-yi-bai/">巨峰寺拜一拜</a></h1>
-  
-
-    <time datetime="2013-02-15T09:49:00.000Z">
-  <span class="day">15</span><span class="month">Feb</span>
-</time>
-  </header>
-  <div class="entry-content">
-    
-      <p>老妈说她基本20年没去龟庵拜了，刚好这几天没事干，所以就准备今天到龟庵拜一拜，恰好现在也是桃花节。</p>
+        <div class="entry">
+        
+          <p>老妈说她基本20年没去龟庵拜了，刚好这几天没事干，所以就准备今天到龟庵拜一拜，恰好现在也是桃花节。</p>
 <p>我们没有走大路，而是走山路，这条路是父母这一辈小时候一直走的，况且省时间，比较近，不用和来自市里的大部队相拥挤。</p>
 <p><img src="http://githubimg.qiniudn.com/20130215_jufengsi/zailushang_1.jpg" alt="小弟的背影" title="小弟的背影"></p>
 
-    
-    
-    <footer class="meta">
-      
-      
-  <div class="tags">
-<a href="/tags/日志-杂事-老家-风景/">日志 杂事 老家 风景</a></div>
+        
+        
+          
+          <a href="/2013/02/15/bai-yi-bai/#more" class="more-link">More</a>
+          
+        
+        </div>
+    </div>
+</div>
+                
+  
+    <div class="wide">
+    <div class="center">
+        <div class="head">
+            <div class="timeLine">
+                <time datetime="2013-02-13T07:06:00.000Z" class="date">
+                    <a href="/2013/02/13/shui-ku-zou-yi-zou/">Feb 13 2013</a>
+                </time>
+            </div>
+        </div>
+        
+  
+    <h2 class="title"><a href="/2013/02/13/shui-ku-zou-yi-zou/">水库走一走</a></h1>
+  
 
-      
-    </footer>
-    
-  </div>
-  
-</article>
-  
-    <article class="post">
-  
-  <header>
-    
-  
-    <h1 class="title"><a href="/2013/02/13/shui-ku-zou-yi-zou/">水库走一走</a></h1>
-  
-
-    <time datetime="2013-02-13T07:06:00.000Z">
-  <span class="day">13</span><span class="month">Feb</span>
-</time>
-  </header>
-  <div class="entry-content">
-    
-      <p>今天妈叫我一起出去走走，于是去了家后面的水库，一路拍了几张照片。</p>
+        <div class="entry">
+        
+          <p>今天妈叫我一起出去走走，于是去了家后面的水库，一路拍了几张照片。</p>
 <p>发现水库的水位下降了，而水坝上的草长高了许多。</p>
 <p><img src="http://githubimg.qiniudn.com/20130213_shuiku/zisehua_1.jpg" alt="一朵紫色的花" title="一朵紫色的花"></p>
 <p><img src="http://githubimg.qiniudn.com/20130213_shuiku/juhua_1.jpg" alt="一朵菊花" title="一朵菊花"></p>
 
-    
-    
-    <footer class="meta">
-      
-      
-  <div class="tags">
-<a href="/tags/日志-杂事-老家-风景/">日志 杂事 老家 风景</a></div>
+        
+        
+          
+          <a href="/2013/02/13/shui-ku-zou-yi-zou/#more" class="more-link">More</a>
+          
+        
+        </div>
+    </div>
+</div>
+                
+  
+    <div class="wide">
+    <div class="center">
+        <div class="head">
+            <div class="timeLine">
+                <time datetime="2013-02-12T13:41:00.000Z" class="date">
+                    <a href="/2013/02/12/railsxue-xi-bi-ji/">Feb 12 2013</a>
+                </time>
+            </div>
+        </div>
+        
+  
+    <h2 class="title"><a href="/2013/02/12/railsxue-xi-bi-ji/">Rails学习笔记-11.2</a></h1>
+  
 
-      
-    </footer>
-    
-  </div>
-  
-</article>
-  
-    <article class="post">
-  
-  <header>
-    
-  
-    <h1 class="title"><a href="/2013/02/12/railsxue-xi-bi-ji/">Rails学习笔记-11.2</a></h1>
-  
-
-    <time datetime="2013-02-12T13:41:00.000Z">
-  <span class="day">12</span><span class="month">Feb</span>
-</time>
-  </header>
-  <div class="entry-content">
-    
-      <p>11.2 迭代F2:建立一个基于Ajax的购物车</p>
+        <div class="entry">
+        
+          <p>11.2 迭代F2:建立一个基于Ajax的购物车</p>
 <p>开始是按照书里面写的，创建create.js.rjs，</p>
 <p>网上查了，需要使用protype-rails gem，于是安装了，但是页面点击后ajax没有效果，需要手动刷新后才能出现。</p>
 <p>于是在网上查了,由于默认使用jquery，所以就改成了jquery的，创建create.js.erb，内容为$(&#39;#cart&#39;).html(&quot;&lt;%= escape_javascript(render(@cart)) %&gt;&quot;);</p>
@@ -278,43 +340,36 @@ $(&#39;#cart&#39;).html(&quot;&lt;%= escape_javascript(render(@cart)) %&gt;&quot
 <p>3.修改line_items_controller中的create方法， 加入format.js</p>
 <p>传送门:<a href="http://ruby-china.org/topics/6154" target="_blank">RubyChina</a></p>
 
-    
-    
-    <footer class="meta">
-      
-      
-  <div class="tags">
-<a href="/tags/rails-web/">rails web</a></div>
-
-      
-    </footer>
-    
-  </div>
-  
-</article>
+        
+        
+          
+          <a href="/2013/02/12/railsxue-xi-bi-ji/#more" class="more-link">More</a>
+          
+        
+        </div>
+    </div>
+</div>
+                
   
 
-  <nav id="pagenavi">
-  
-    <a href="/archives/" class="alignleft prev">Prev</a>
-  
-  
-  <div class="clearfix"></div>
-</nav>
+                  
+                <div class="wide">
+                    <div class="center">
+                        
+                        <span class="prev"><a href="/archives/">◀</a></span>
+                        
+                        
+                    </div>
+                </div>
+                
 </div>
-  <footer id="footer" class="inner"><div class="social alignright">
-  
-  
-  
-  
-  <a class="rss" href="/atom.xml" title="RSS">RSS</a>
-</div>
-<p>
+        </div>
+
+  <footer>
   
   &copy; 2013 John Doe
   
-</p>
-<div class="clearfix"></div></footer>
+</footer>
   <script src="/js/jquery.imagesloaded.min.js"></script>
 <script src="/js/gallery.js"></script>
 
@@ -329,12 +384,5 @@ $(&#39;#cart&#39;).html(&quot;&lt;%= escape_javascript(render(@cart)) %&gt;&quot
 })(jQuery);
 </script>
 
-
-<div id="phasebeam">
-  <canvas></canvas>
-  <canvas></canvas>
-  <canvas></canvas>
-</div>
-<script src="/js/phasebeam.js"></script>
 </body>
 </html>
